@@ -1,7 +1,10 @@
-h1 {
+.parent {
   color: blue;
 }
+.parent > .element {
+  color: purple;
+}
 
-h2 {
+.element {
   color: red;
 }/*# sourceMappingURL=style.css.map */
