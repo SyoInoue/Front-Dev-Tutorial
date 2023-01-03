@@ -1,0 +1,31 @@
+a {
+  color: 'orange';
+
+  &:visited {
+    color: blue;
+  }
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: purple;
+  }
+}
+
+div {
+  & span {
+    color: olive;
+//「nth-child」...特定の要素のみスタイルを当てる。
+// 「nth-of-type」はほぼ同じ意味だが、途中セレクタ以外のタグが来てもちゃんとスタイルが当たる。
+// 偶数は「2n」でいける
+    &:nth-child(2n) {
+      color: purple;
+    }
+  }
+}
